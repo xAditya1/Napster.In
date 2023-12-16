@@ -1,0 +1,79 @@
+<!-- sonnet.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonnet - Napster.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/Css/nav.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/sonnet.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navlist">
+        <!-- Include the navigation content from nav.html -->
+        <div class="logo">Napster.in</div>
+        <div class="nav-links">
+            <a href="/Html/nav.html"><i class="fas fa-home"></i> Home</a>
+            <a href="/Html/featured.html"><i class="fas fa-fire"></i> Featured</a>
+            <a href="/Html/albums.html"><i class="fas fa-compact-disc"></i> Albums</a>
+            <a href="/Html/sonnet.html" class="active"><i class="fas fa-music"></i> Sonnet</a>
+            <a href="/Html/about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="/Html/contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="search">
+            <form action="#">
+                <input type="text" placeholder="Search songs" name="search">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- Refresh button -->
+        <div class="refresh-btn" onclick="location.reload();">
+            <i class="fas fa-sync-alt"></i>
+        </div>
+    </div>
+
+    <!-- Sonnet Section -->
+    <div class="sonnet-container">
+        <h2>Your Musical Sonnet</h2>
+        <p>Compose, share, and let your music resonate. Your sonnet, your expression.</p>
+
+        <!-- Creative Form for Music Submission -->
+        <div class="music-submission-form">
+            <h3>Share Your Music</h3>
+            <form id="musicForm" onsubmit="submitMusic(event)">
+                <label for="songTitle">Song Title:</label>
+                <input type="text" id="songTitle" name="songTitle" required>
+
+                <label for="artistName">Artist Name:</label>
+                <input type="text" id="artistName" name="artistName" required>
+
+                <label for="musicFile">Upload Your Music:</label>
+                <input type="file" id="musicFile" name="musicFile" accept=".mp3" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Music Feed Section -->
+        <div class="music-feed" id="musicFeed">
+            <!-- Shared music posts will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Napster.in. All rights reserved.</p>
+    </footer>
+
+    <!-- Include the JavaScript file -->
+    <script src="/JavaScript/sonnet.js"></script>
+</body>
+
+</html>

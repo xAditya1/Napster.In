@@ -1,0 +1,108 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Napster.in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/Css/nav.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/contact.css"> 
+    <script src="/JavaScript/searchSong.js"></script>
+    <!-- Create this file for contact page styling -->
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navlist">
+        <!-- Include the navigation content from nav.html -->
+        <div class="logo">Napster.in</div>
+        <div class="nav-links">
+            <a href="/Html/nav.html"><i class="fas fa-home"></i> Home</a>
+            <a href="/Html/featured.html"><i class="fas fa-fire"></i> Featured</a>
+            <a href="/Html/albums.html"><i class="fas fa-compact-disc"></i> Albums</a>
+            <a href="/Html/sonnet.html"><i class="fas fa-music"></i> Sonnet</a>
+            <a href="/Html/about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="/Html/contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="search">
+            <form onsubmit="searchSongs(); return false;">
+                <input type="text" placeholder="Search songs" name="search" id="searchInput">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- Refresh button -->
+        <div class="refresh-btn" onclick="location.reload();">
+            <i class="fas fa-sync-alt"></i>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We'd love to connect with you! Choose your preferred way to reach out.</p>
+
+        <!-- Contact Form -->
+        <form action="#" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Connect With Us Section -->
+        <div class="connect-container">
+            <h3>Connect With Us</h3>
+            <p>For any inquiries, feel free to reach out through your preferred channel.</p>
+
+            <!-- Contact Services -->
+            <div class="contact-services">
+                <div class="service-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>Email</p>
+                    <p>adityawithit@gmail.com</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-phone"></i>
+                    <p>Phone</p>
+                    <p>+91 870-075-04470</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Location</p>
+                    <p>Headquarters Hazratganj, Lucknow</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-comments"></i>
+                    <p>Social Media</p>
+                    <div class="social-links">
+                        <a href="#" class="fab fa-facebook"></a>
+                        <a href="https://twitter.com/Officialadditya" class="fab fa-twitter"></a>
+                        <a href="https://www.instagram.com/adityathehustler" class="fab fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/aditya-gupta-23a59a271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Napster.in. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

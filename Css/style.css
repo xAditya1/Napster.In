@@ -1,0 +1,201 @@
+/* style.css */
+/* Additional styling for enhanced beauty */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef); /* Soft gradient background */
+    color: #333; /* Updated text color */
+}
+
+#navlist {
+    background: linear-gradient(to right, #1a1a1a, #2c3e50); /* Gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.refresh-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: #3498db;
+    font-size: 20px;
+    z-index: 999; /* Ensure it's above other elements */
+}
+
+.refresh-btn:hover {
+    color: #2980b9;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px; /* Added letter spacing for a modern look */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.nav-links a.active {
+    color: #3498db;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.search button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #2980b9;
+}
+
+/* Featured section styling */
+.featured {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.featured h2 {
+    margin-bottom: 10px;
+    color: #3498db;
+    font-size: 32px;
+}
+
+.featured p {
+    color: #7f8c8d;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.featured-songs {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.featured-song {
+    width: 300px;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Added a subtle hover effect */
+}
+
+.featured-song:hover {
+    transform: scale(1.05); /* Scale on hover for a subtle animation */
+}
+
+.featured-song img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.featured-song h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.featured-song p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Albums section styling */
+.albums-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    background-color: #ecf0f1;
+    border-radius: 20px;
+}
+
+.album {
+    text-align: center;
+    background: linear-gradient(to right, #3498db, #6bcbef);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.album img {
+    max-width: 100%;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.album h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.album p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.album button {
+    background-color: #fff;
+    color: #3498db;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.album button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #1a1a1a, #2c3e50);
+    color: #fff;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 20px;
+}

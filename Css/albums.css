@@ -1,0 +1,33 @@
+/* albums.css */
+/* Styles for the album section */
+.albums-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Increased min width to 350px */
+    gap: 20px;
+    padding: 20px;
+    background-color: #ecf0f1;
+}
+
+.album {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px; /* Increased padding */
+    border-radius: 15px; /* Increased border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.album img {
+    max-width: 100%;
+    border-radius: 12px; /* Increased border radius */
+    margin-bottom: 20px; /* Increased margin */
+}
+
+.album h3 {
+    margin: 20px 0; /* Increased margin */
+    font-size: 24px; /* Increased font size */
+}
+
+.album p {
+    color: #7f8c8d;
+    font-size: 18px; /* Increased font size */
+}
