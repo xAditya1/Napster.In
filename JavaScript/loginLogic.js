@@ -31,7 +31,7 @@ function signup() {
     showAlert('Account created!');
     // Redirect to the sign-in page after a short delay
     setTimeout(function () {
-        window.location.href = "/Html/signin.html";
+        window.location.href = "/Html/index.html";
     }, 2000);
 }
 
