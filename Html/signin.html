@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Napster.in</title>
+    <link rel="icon" type="image/x-icon" href="/Pictures/N_Logo.png">
+    <link rel="stylesheet" href="/Css/login.css">
+    <script src="/JavaScript/loginLogic.js"></script>
+</head>
+
+<body>
+    <div class="signin-container">
+        <h2 style="color: #2196F3;">Sign In - Napster</h2>
+        <div class="input-group">
+            <input class="input" required type="text" id="username" onkeydown="handleEnterKey(event, 'password')">
+            <label class="label" for="username">Username or Email ID</label>
+        </div>
+
+        <div class="input-group">
+            <input class="input" required type="password" id="password" onkeydown="handleEnterKey(event, 'submitButton')">
+            <label class="label" for="password">Password</label>
+        </div>
+
+        <button class="signin-button" onclick="signin()" id="submitButton">Sign In</button>
+
+        <a href="/Html/signup.html" class="signup-link">Don't have an account? Sign Up</a>
+    </div>
+
+  
+</body>
+
+</html>

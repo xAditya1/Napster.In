@@ -1,0 +1,126 @@
+<!--nav.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Napster.in</title>
+    <link rel="icon" type="image/x-icon" href="/Pictures/N_Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/Css/nav.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <script src="/JavaScript/searchSong.js"></script>
+    <script src="/JavaScript/mobileView.js"></script>
+</head>
+
+<body>
+    <!-- Navbar items -->
+    <div class="navbar">
+        <div class="logo">Napster.in</div>
+
+        <div class="nav-toggle" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="/Html/nav.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="/Html/featured.html"><i class="fas fa-fire"></i> Featured</a>
+            <a href="/Html/albums.html"><i class="fas fa-compact-disc"></i> Albums</a>
+            <a href="/Html/sonnet.html"><i class="fas fa-music"></i> Sonnet</a>
+            <a href="/Html/about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="/Html/contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+
+        <div class="search">
+            <form onsubmit="searchSongs(); return false;">
+                <input type="text" placeholder="Search songs" name="search" id="searchInput">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+        <!-- Refresh button -->
+        <div class="refresh-btn" onclick="location.reload();">
+            <i class="fas fa-sync-alt"></i>
+        </div>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="featured">
+        <h2>Discover New Music</h2>
+        <p>Explore a world of rhythm and melody</p>
+        <div class="featured-songs">
+            <!-- Add featured songs with images and details -->
+            <div class="featured-song">
+                <img src="/Pictures/Thumbail song/Excuses_thumbail.jpg" alt="Featured Song 1">
+                <h3>Excuses</h3>
+                <p>AP Dhillon, Intense, Gurinder Gill</p>
+                <audio controls>
+                    <source src="/Popular songs/Excuses(128k).mp3" type="audio/mp3">
+                </audio>
+            </div>
+            <div class="featured-song">
+                <img src="/Pictures/Thumbail song/Libaas.jpeg" alt="Featured Song 2">
+                <h3>Kale Je Libaas Di</h3>
+                <p>Kaka</p>
+                <audio controls>
+                    <source src="/Popular songs/Kale_Je_Libaas_Di_Kaka_GinniKapoor_PunjabiSong.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- Song Albums -->
+    <div class="albums-container">
+        <div class="album">
+            <img src="https://source.unsplash.com/250x250/?music" alt="Popular Songs">
+            <h3>Popular Songs</h3>
+            <p>Listen to the most popular songs of the moment.</p>
+            <a href="/Html/popularSongs.html"><button>Listen Now</button></a>
+        </div>
+        <div class="album">
+            <img src="https://source.unsplash.com/250x251/?music" alt="New Released">
+            <h3>New Released</h3>
+            <p>Discover the latest songs released recently.</p>
+            <a href="/Html/newReleased.html"><button>Listen Now</button></a>
+        </div>
+        <div class="album">
+            <img src="https://source.unsplash.com/250x252/?music" alt="Hindi Songs">
+            <h3>Hindi Songs</h3>
+            <p>Explore the best Hindi songs collection.</p>
+            <button>Listen Now</button>
+        </div>
+        <div class="album">
+            <img src="https://source.unsplash.com/250x253/?music" alt="English Songs">
+            <h3>English Songs</h3>
+            <p>Enjoy the latest hits in English music.</p>
+            <button>Listen Now</button>
+        </div>
+        <div class="album">
+            <img src="https://source.unsplash.com/250x254/?music" alt="Punjabi Songs">
+            <h3>Punjabi Songs</h3>
+            <p>Get into the Punjabi vibes with these songs.</p>
+            <button>Listen Now</button>
+        </div>
+        <div class="album">
+            <img src="https://source.unsplash.com/250x255/?music" alt="Love Songs">
+            <h3>Love Songs</h3>
+            <p>Express your feelings with these romantic tunes.</p>
+            <button>Listen Now</button>
+        </div>
+        <div class="album">
+            <img src="https://source.unsplash.com/250x256/?music" alt="Devotional Songs">
+            <h3>Devotional Songs</h3>
+            <p>Find solace in these spiritual and devotional songs.</p>
+            <button>Listen Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Napster.in. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

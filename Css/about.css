@@ -1,0 +1,47 @@
+/* about.css */
+/* Add your styling for the about page here */
+
+.about-container {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+}
+
+.about-container h2 {
+    margin-bottom: 20px;
+    color: #3498db;
+}
+
+.about-container p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #7f8c8d;
+}
+
+/* Creative Presentation Styling */
+.creative-presentation {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.presentation-item {
+    text-align: center;
+    width: 30%; /* Adjust as needed for responsiveness */
+    margin-bottom: 20px;
+}
+
+.presentation-item i {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.presentation-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* You can customize and add more styles as needed */

@@ -1,0 +1,129 @@
+<!-- featured.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured - Napster.in</title>
+    <link rel="icon" type="image/x-icon" href="/Pictures/N_Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="/Css/nav.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/featured.css">
+    <script src="/JavaScript/searchSong.js"></script>
+    <script src="/JavaScript/mobileView.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Include the navigation content from nav.html -->
+        <div class="logo">Napster.in</div>
+
+        <div class="nav-toggle" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="/Html/nav.html"><i class="fas fa-home"></i> Home</a>
+            <a href="/Html/featured.html" class="active"><i class="fas fa-fire"></i> Featured</a>
+            <a href="/Html/albums.html"><i class="fas fa-compact-disc"></i> Albums</a>
+            <a href="/Html/sonnet.html"><i class="fas fa-music"></i> Sonnet</a>
+            <a href="/Html/about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="/Html/contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+        <div class="search">
+            <form onsubmit="searchSongs(); return false;">
+                <input type="text" placeholder="Search songs" name="search" id="searchInput">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="featured">
+        <h2>Discover New Music</h2>
+        <p>Explore a world of rhythm and melody. Here are some handpicked songs, playlists, and artists just for you!</p>
+
+        <!-- Featured Songs -->
+        <div class="featured-songs">
+            <!-- Featured Song 1 -->
+            <div class="featured-song">
+                <img src="/Pictures/Thumbail song/CheckItOut.jpeg" alt="Featured Song 1">
+                <h3>Check it out</h3>
+                <p>Parmish Verma, Paradox</p>
+                <button onclick="toggleSound()">
+                    <i id="playIcon" class="fas fa-play"></i>
+                  </button>
+            </div>
+
+            <!-- Featured Song 2 -->
+            <div class="featured-song">
+                <img src="https://picsum.photos/300/201" alt="Featured Song 2">
+                <h3>Song Title 2</h3>
+                <p>Artist Name</p>
+                <button>Listen Now</button>
+            </div>
+
+            <!-- Featured Playlist 1 -->
+            <div class="featured-song">
+                <img src="https://picsum.photos/300/202" alt="Featured Playlist 1">
+                <h3>Playlist Title 1</h3>
+                <p>A collection of top hits for your day.</p>
+                <button>Listen Now</button>
+            </div>
+
+            <!-- Featured Playlist 2 -->
+            <div class="featured-song">
+                <img src="https://picsum.photos/300/203" alt="Featured Playlist 2">
+                <h3>Playlist Title 2</h3>
+                <p>Discover the latest songs from your favorite artists.</p>
+                <button>Listen Now</button>
+            </div>
+
+            <!-- Featured Artist 1 -->
+            <div class="featured-song">
+                <img src="https://picsum.photos/300/204" alt="Featured Artist 1">
+                <h3>Artist Name 1</h3>
+                <p>Explore the unique sounds of this talented artist.</p>
+                <button>Discover</button>
+            </div>
+
+            <!-- Featured Artist 2 -->
+            <div class="featured-song">
+                <img src="https://picsum.photos/300/205" alt="Featured Artist 2">
+                <h3>Artist Name 2</h3>
+                <p>Dive into the musical world of this amazing artist.</p>
+                <button>Discover</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with refresh button -->
+    <footer>
+        <p>&copy; 2023 Napster.in. All rights reserved.</p>
+        <div class="refresh-btn" onclick="location.reload();">
+            <i class="fas fa-sync-alt"></i>
+        </div>
+    </footer>
+    <script>
+        var sound = new Audio();
+        sound.src = "/Popular songs/Check_It_Out(128k).mp3";
+    
+        function toggleSound() {
+          if (sound.paused) {
+            sound.play();
+            document.getElementById('playIcon').className = 'fas fa-pause'; // Change to pause icon
+          } else {
+            sound.pause();
+            document.getElementById('playIcon').className = 'fas fa-play'; // Change to play icon
+          }
+        }
+      </script>
+</body>
+
+</html>
+
